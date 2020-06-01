@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Links from "./pages/Links";
 import Detail from "./pages/Detail";
+import Home from "./pages/Home";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
 // import library from "./client/public/images/library.png"
@@ -25,7 +26,10 @@ function App() {
        <div>
          <Nav />
          <Switch>
-           <Route exact path={["/", "/links"]}>
+           <Route exact path="/">
+             <Home />
+           </Route>
+           <Route exact path="/links">
              <Links />
            </Route>
            <Route exact path="/links/:id">

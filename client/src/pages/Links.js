@@ -6,6 +6,7 @@ import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
 
+
 function Links() {
   // Setting our component's initial state
   const [links, setLinks] = useState([])
@@ -46,8 +47,9 @@ function Links() {
     }
   };
 
-    return (
-      <Container fluid>
+  
+  return (
+     <Container fluid>
         <Row>
           <Col size="md-6">
             <Jumbotron><h2>Subjects to Choose From</h2></Jumbotron>
@@ -107,8 +109,8 @@ function Links() {
           </Col>
         </Row>
       </Container>
-    );
-  }
+  );
+  };
 
 
 export default Links;
