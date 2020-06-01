@@ -6,31 +6,25 @@ import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
 
-function Books() {
+
+function Links() {
   // Setting our component's initial state
-  const [books, setBooks] = useState([])
+  const [links, setLinks] = useState([])
   const [formObject, setFormObject] = useState({})
 
   // Load all books and store them with setBooks
   useEffect(() => {
-    loadBooks()
+    loadLinks()
   }, [])
 
   // Loads all books and sets them to books
-  function loadBooks() {
-    API.getBooks()
+  function loadLinks() {
+    API.getLinks()
       .then(res => 
-        setBooks(res.data)
+        setLinks(res.data)
       )
       .catch(err => console.log(err));
   };
-
-  // Deletes a book from the database with a given id, then reloads books from the db
-  function deleteBook(id) {
-    API.deleteBook(id)
-      .then(res => loadBooks())
-      .catch(err => console.log(err));
-  }
 
   // Handles updating component state when the user types into the input field
   function handleInputChange(event) {
@@ -42,34 +36,42 @@ function Books() {
   // Then reload books from the database
   function handleFormSubmit(event) {
     event.preventDefault();
-    if (formObject.title && formObject.author) {
-      API.saveBook({
-        title: formObject.title,
-        author: formObject.author,
+    if (formObject.url && formObject.subject) {
+      API.saveLink({
+        url: formObject.url,
+        subject: formObject.subject,
         synopsis: formObject.synopsis
       })
-        .then(res => loadBooks())
+        .then(res => loadLinks())
         .catch(err => console.log(err));
     }
   };
 
-    return (
-      <Container fluid>
+  
+  return (
+     <Container fluid>
         <Row>
           <Col size="md-6">
+            <Jumbotron><h2>Subjects to Choose From</h2></Jumbotron>
+           
+             <h4>MongoDB</h4>
+              <h4>Express</h4>
+              <h4>React</h4>
+              <h4>Node</h4>
+           
             <Jumbotron>
-              <h1>What Books Should I Read?</h1>
+              <h1>Submit a New Link for Reference</h1>
             </Jumbotron>
             <form>
               <Input
                 onChange={handleInputChange}
-                name="title"
-                placeholder="Title (required)"
+                name="url"
+                placeholder="Url (required)"
               />
               <Input
                 onChange={handleInputChange}
-                name="author"
-                placeholder="Author (required)"
+                name="subject"
+                placeholder="Subject (required)"
               />
               <TextArea
                 onChange={handleInputChange}
@@ -77,24 +79,25 @@ function Books() {
                 placeholder="Synopsis (Optional)"
               />
               <FormBtn
-                disabled={!(formObject.author && formObject.title)}
+                disabled={!(formObject.subject && formObject.url)}
                 onClick={handleFormSubmit}
               >
-                Submit Book
+                Submit New Reference Link
               </FormBtn>
             </form>
+           
           </Col>
           <Col size="md-6 sm-12">
             <Jumbotron>
-              <h1>Books On My List</h1>
+              <h1>Reference Links</h1>
             </Jumbotron>
-            {books.length ? (
+            {links.length ? (
               <List>
-                {books.map(book => (
-                  <ListItem key={book._id}>
-                    <Link to={"/books/" + book._id}>
+                {links.map(link => (
+                  <ListItem key={link._id}>
+                    <Link to={"/links/" + link._id}>
                       <strong>
-                        {book.title} by {book.author}
+                        {link.url} by {link.subject}
                       </strong>
                     </Link>
                     </ListItem>
@@ -106,8 +109,8 @@ function Books() {
           </Col>
         </Row>
       </Container>
-    );
-  }
+  );
+  };
 
 
-export default Books;
+export default Links;
