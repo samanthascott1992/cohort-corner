@@ -9,7 +9,7 @@ router.route("/links")
   .post(linksController.create);
 
 // Matches with "/api/links/:id"
-router.route("links/:id")
+router.route("/links/:id")
   .get(linksController.findById)
   .put(linksController.update)
 

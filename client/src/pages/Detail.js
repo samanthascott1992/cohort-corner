@@ -22,7 +22,7 @@ function Detail(props) {
           <Col size="md-12">
             <Jumbotron>
               <h1>
-                {link.url} on {link.subject}
+                {link.url} by {link.subject}
               </h1>
             </Jumbotron>
           </Col>
@@ -39,7 +39,7 @@ function Detail(props) {
         </Row>
         <Row>
           <Col size="md-2">
-            <Link to="/">← Back to References</Link>
+            <Link to="/links">← Back to References</Link>
           </Col>
         </Row>
       </Container>
