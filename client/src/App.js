@@ -4,7 +4,7 @@ import Links from "./pages/Links";
 import Detail from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
-//import library from "./client/public/images/library.png"
+// import library from "./client/public/images/library.png"
 import NavBar from "./components/NavBar";
 import { useAuth0 } from "./react-auth0-spa";
 

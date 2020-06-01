@@ -50,6 +50,13 @@ function Links() {
       <Container fluid>
         <Row>
           <Col size="md-6">
+            <Jumbotron><h2>Subjects to Choose From</h2></Jumbotron>
+           
+             <h4>MongoDB</h4>
+              <h4>Express</h4>
+              <h4>React</h4>
+              <h4>Node</h4>
+           
             <Jumbotron>
               <h1>Submit a New Link for Reference</h1>
             </Jumbotron>
@@ -76,6 +83,7 @@ function Links() {
                 Submit New Reference Link
               </FormBtn>
             </form>
+           
           </Col>
           <Col size="md-6 sm-12">
             <Jumbotron>
