@@ -1,19 +1,28 @@
-import React, { useState, useEffect } from "react";
+import React, {useState, useEffect } from "react";
 import books from "../Images/library.png";
+import { useAuth0 } from "../react-auth0-spa";
 
-// var divStyle = {
-//   width: 80%,
-//   height: 80%
-// }
+
 function Home() {
-    const square = 80;
-    const width = 100;
-
-
+    const { isAuthenticated, loginWithRedirect, logout } = useAuth0();
     return (
-        <img src={books} className="booksImg" style={{width: width + '%', height: square + '%'}} />
-    );
-}
-
+      <img src={books} alt="books" className="booksImg" style= {styles.img} />
+    )};
+      
 export default Home;
+
+const styles = {
+  img: {
+    width: "100%",
+    height: "80%",
+    zIndex: 1
+  },
+  button : {
+    zIndex: -1,
+    float: "center",
+    position: "absolute",
+    margin: "40%"
+  }
+
+};
 

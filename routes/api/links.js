@@ -2,7 +2,7 @@ const router = require("express").Router();
 const linksController = require("../../controllers/linksController");
 
 // Matches with "/api/links"
-router.route("/");
+ router.route("/");
 // Matches with "/api/links"
 router.route("/links")
   .get(linksController.findAll)
