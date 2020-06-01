@@ -4,7 +4,7 @@ function Nav() {
   return (
     <nav className="navbar navbar-expand-lg bg-primary">
       <a className="navbar-brand" href="/">
-        React Reading List
+        Dereferencing Pointers
       </a>
     </nav>
   );
