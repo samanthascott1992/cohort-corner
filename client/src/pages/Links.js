@@ -72,15 +72,20 @@ function Links() {
               <h1>Submit a New Link for Reference</h1>
             </Jumbotron>
             <form>
-              <Input
-                onChange={handleInputChange}
-                name="url"
-                placeholder="Url (required)"
+              <Input 
+              onChange={handleInputChange}
+              name="category"
+              placeholder="Please Pick a Category to Submit to!"
               />
               <Input
                 onChange={handleInputChange}
                 name="subject"
                 placeholder="Subject (required)"
+              /> 
+               <Input
+                onChange={handleInputChange}
+                name="url"
+                placeholder="Url (required)"
               />
               <TextArea
                 onChange={handleInputChange}
@@ -88,7 +93,7 @@ function Links() {
                 placeholder="Synopsis (Optional)"
               />
               <FormBtn
-                disabled={!(formObject.subject && formObject.url)}
+                disabled={!(formObject.category && formObject.subject && formObject.url)}
                 onClick= {handleFormSubmit}
               >
                 Submit New Reference Link
@@ -106,7 +111,8 @@ function Links() {
                   <ListItem key={link._id}>
                     <Link to={"/links/" + link._id}>
                       <strong>
-                        {link.url} by {link.subject}
+                        {link.category}
+                        {link.subject} by {link.url}
                       </strong>
                     </Link>
                     </ListItem>
