@@ -9,7 +9,7 @@ import mongo from "../Images/mngodbimg.png"
 import nExpress from "../Images/nexpress.jpg"
 import ract from "../Images/react.png"
 import node from "../Images/node.png"
-
+import Nav from "../components/Nav";
 
 function Links() {
   // Setting our component's initial state
@@ -54,7 +54,9 @@ function Links() {
 
   
   return (
+    
      <Container fluid>
+       <Nav/>
         <Row>
           <Col size="md-6">
             <Jumbotron><h2>Subjects to Choose From</h2>
