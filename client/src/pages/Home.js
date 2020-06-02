@@ -22,7 +22,8 @@ const styles = {
 function Home() {
     const { isAuthenticated, loginWithRedirect, logout } = useAuth0();
     return (
+
         <img src={books} alt="books" className="booksImg" style= {styles.img} />
-        )};
-    
+    );
+};
    export default Home;
