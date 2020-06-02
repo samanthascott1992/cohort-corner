@@ -7,7 +7,7 @@ import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
 import mongo from "../Images/mngodbimg.png"
 import nExpress from "../Images/nexpress.jpg"
-import ract from "../Images/ract.png"
+import ract from "../Images/react.png"
 import node from "../Images/node.png"
 import Nav from "../components/Nav";
 
