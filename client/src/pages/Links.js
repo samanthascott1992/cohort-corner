@@ -11,6 +11,7 @@ import ract from "../Images/react.png"
 import node from "../Images/node.png"
 import Nav from "../components/Nav";
 
+
 function Links() {
     // Setting our component's initial state
     const [links, setLinks] = useState([])
@@ -52,7 +53,6 @@ function Links() {
         }
         loadLinks();
     };
-
 
     return (
 
