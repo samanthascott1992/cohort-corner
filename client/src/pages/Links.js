@@ -11,6 +11,7 @@ import ract from "../Images/react.png"
 import node from "../Images/node.png"
 import Nav from "../components/Nav";
 
+
 function Links() {
   // Setting our component's initial state
   const [links, setLinks] = useState([])
@@ -64,10 +65,10 @@ function Links() {
             
             </Jumbotron>
            
-             <h4>MongoDB <img src={mongo}width="50" height="50" alt="mongodb"/></h4>
-              <h4>Express   <img src={nExpress}width="50" height="50" alt="express"/></h4>
-              <h4>React <img src={ract}width="50" height="50" alt="react"/></h4>
-              <h4>Node <img src={node}width="50" height="50" alt="node"/></h4>
+           <button> MongoDB <img src={mongo}width="50" height="50" alt="mongodb"/></button> <br />
+              <button>Express   <img src={nExpress}width="50" height="50" alt="express"/></button> <br />
+            <button>  React <img src={ract}width="50" height="50" alt="react"/></button> <br />
+             <button> Node <img src={node}width="50" height="50" alt="node"/></button> <br />
            
             <Jumbotron>
               <h1>Submit a New Link for Reference</h1>
