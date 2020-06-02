@@ -42,8 +42,9 @@ function Links() {
     event.preventDefault();
     if (formObject.url && formObject.subject) {
       API.saveLink({
-        url: formObject.url,
+        category: formObject.category,
         subject: formObject.subject,
+        url: formObject.url,
         synopsis: formObject.synopsis
       })
         .then(res => loadLinks())
@@ -85,7 +86,7 @@ function Links() {
                <Input
                 onChange={handleInputChange}
                 name="url"
-                placeholder="Url (required)"
+                placeholder="URL (required)"
               />
               <TextArea
                 onChange={handleInputChange}
@@ -111,8 +112,7 @@ function Links() {
                   <ListItem key={link._id}>
                     <Link to={"/links/" + link._id}>
                       <strong>
-                        {link.category}
-                        {link.subject} by {link.url}
+                       {link.subject}
                       </strong>
                     </Link>
                     </ListItem>

@@ -7,6 +7,7 @@ import Nav from "../components/Nav";
 
 function Detail(props) {
   const [link, setLink] = useState({})
+  console.log("link: " + JSON.stringify(link));
 
   // When this component mounts, grab the book with the _id of props.match.params.id
   // e.g. localhost:3000/books/599dcb67f0f16317844583fc
@@ -25,15 +26,18 @@ function Detail(props) {
           <Col size="md-12">
             <Jumbotron>
               <h1>
-                {link.url} by {link.subject}
-              </h1>
-            </Jumbotron>
+                {link.category}
+                </h1>
+                 {link.subject}
+              </Jumbotron>
           </Col>
         </Row>
         <Row>
           <Col size="md-10 md-offset-1">
             <article>
-              <h1>Synopsis</h1>
+              <h2>Link to go to</h2>
+              <p> {link.url} </p>
+              <h2>Synopsis</h2>
               <p>
                 {link.synopsis}
               </p>
