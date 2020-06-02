@@ -1,5 +1,5 @@
 import React, {useState, useEffect } from "react";
-import books from "../Images/library.png";
+import books from "../Images/library.mp4";
 import { useAuth0 } from "../react-auth0-spa";
 
 
@@ -22,7 +22,8 @@ const styles = {
 function Home() {
     const { isAuthenticated, loginWithRedirect, logout } = useAuth0();
     return (
-        <img src={books} alt="books" className="booksImg" style= {styles.img} />
+<
+        // <img src={books} alt="books" className="booksImg" style= {styles.img} />
         )};
     
    export default Home;
