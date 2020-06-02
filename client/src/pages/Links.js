@@ -49,6 +49,7 @@ function Links() {
         .then(res => loadLinks())
         .catch(err => console.log(err));
     }
+    loadLinks();
   };
 
   
@@ -86,7 +87,7 @@ function Links() {
               />
               <FormBtn
                 disabled={!(formObject.subject && formObject.url)}
-                onClick={handleFormSubmit}
+                onClick= {handleFormSubmit}
               >
                 Submit New Reference Link
               </FormBtn>
