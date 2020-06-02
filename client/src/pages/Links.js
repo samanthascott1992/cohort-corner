@@ -5,6 +5,10 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
+import mongo from "../Images/mngodbimg.png"
+import nExpress from "../Images/nexpress.jpg"
+import ract from "../Images/react.png"
+import node from "../Images/node.png"
 
 
 function Links() {
@@ -45,6 +49,7 @@ function Links() {
         .then(res => loadLinks())
         .catch(err => console.log(err));
     }
+    loadLinks();
   };
 
   
@@ -52,12 +57,14 @@ function Links() {
      <Container fluid>
         <Row>
           <Col size="md-6">
-            <Jumbotron><h2>Subjects to Choose From</h2></Jumbotron>
+            <Jumbotron><h2>Subjects to Choose From</h2>
+            
+            </Jumbotron>
            
-             <h4>MongoDB</h4>
-              <h4>Express</h4>
-              <h4>React</h4>
-              <h4>Node</h4>
+             <h4>MongoDB <img src={mongo}width="50" height="50" alt="mongodb"/></h4>
+              <h4>Express   <img src={nExpress}width="50" height="50" alt="express"/></h4>
+              <h4>React <img src={ract}width="50" height="50" alt="react"/></h4>
+              <h4>Node <img src={node}width="50" height="50" alt="node"/></h4>
            
             <Jumbotron>
               <h1>Submit a New Link for Reference</h1>
@@ -80,7 +87,7 @@ function Links() {
               />
               <FormBtn
                 disabled={!(formObject.subject && formObject.url)}
-                onClick={handleFormSubmit}
+                onClick= {handleFormSubmit}
               >
                 Submit New Reference Link
               </FormBtn>

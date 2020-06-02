@@ -15,6 +15,6 @@ export default {
   },
   // Saves a book to the database
   saveLink: function(linkData) {
-    return axios.post("/api/links", linkData);
+    return axios.post("/api/links/", linkData);
   }
 };
