@@ -39,41 +39,41 @@ const linkSeed = [{
     {
         category: "Express",
         subject: "Express with API Reference",
-        url: "https://expressjs.com/en/guide/using-middleware.html",
+        url: "http://expressjs.com/en/4x/api.html#res.end",
         synopsis: "Extensive listing of syntax resources for middleware function in Express.",
         date: new Date(Date.now())
     },
     {
         category: "Express",
         subject: "Express Tutorial for Routes and Controllers",
-        url:  "https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/routes",
+        url: "https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/routes",
         synopsis: "This tutorial provides support in setting up routes (URL handling code) with handler functions for resources needed concerning endpoints.",
         date: new Date(Date.now())
     },
     {
         category: "Express",
-        subject: "Express Response Methods", 
-        url:  "",      
+        subject: "Express Response Methods",
+        url: "https://expressjs.com/en/guide/routing.html#response-methods",
         synopsis: "Tutorial on the various methods of routing, and how an application's endpoints (URIs) respond to client requests.",
         date: new Date(Date.now())
     },
     {
         category: "Express",
-        subject: "Using Express Middleware", 
-        url: "https://expressjs.com/en/guide/routing.html#response-methods",
+        subject: "Using Express Middleware",
+        url: "https://expressjs.com/en/guide/using-middleware.html",
         synopsis: "A tutorial in helping to convey the logic of how Express applications are essentially a series of middleware function calls.",
         date: new Date(Date.now())
     },
     {
         category: "ReactJS",
-        subject:  "Latest ReactJS Examples", 
+        subject: "Latest ReactJS Examples",
         url: "https://react.rocks/",
         synopsis: "Great examples and inspiration in building ReactJS applications.",
         date: new Date(Date.now())
     },
     {
         category: "ReactJS",
-        subject:  "React State vs Props Explained",
+        subject: "React State vs Props Explained",
         url: "https://codeburst.io/react-state-vs-props-explained-51beebd73b21",
         synopsis: "Basic tutorial explaining and comparing React components to plain functions.",
         date: new Date(Date.now())
@@ -81,11 +81,11 @@ const linkSeed = [{
     {
         category: "ReactJS",
         subject: "Rules of Hooks in React",
-        url: " ",
+        url: "https://reactjs.org/docs/hooks-rules.html",
         synopsis: "Tutorial on how to follow the rules in utilizing the JavaScript function of hooks in React.",
         date: new Date(Date.now())
     },
-    { 
+    {
         category: "ReactJS",
         subject: "Fragments-React",
         url: "https://reactjs.org/docs/fragments.html",
@@ -95,7 +95,7 @@ const linkSeed = [{
     {
         category: "Node.js",
         subject: "What exactly is Node.js?",
-        url: "https://www.freecodecamp.org/news/what-exactly-is-node-js-ae36e97449f5/",        
+        url: "https://www.freecodecamp.org/news/what-exactly-is-node-js-ae36e97449f5/",
         synopsis: "Informative tutorial explaining how Node.js' run time environment includes everything one would need to execute a program written in JavaScript.",
         date: new Date(Date.now())
     },
@@ -115,7 +115,7 @@ const linkSeed = [{
     },
     {
         category: "Node.js",
-        subject:  "How to Deploy a Node.js App to Heroku",
+        subject: "How to Deploy a Node.js App to Heroku",
         url: "https://scotch.io/tutorials/how-to-deploy-a-node-js-app-to-heroku",
         synopsis: "Tutorials on implementation and tools needed to deploy a Node.js application to Heroku.",
         date: new Date(Date.now())
