@@ -58,7 +58,7 @@ function Links() {
         loadLinks();
     };
 
-    const ViewLinks = ({ id }) => {
+    const viewLinks = ({ id }) => {
 
         const { user } = useAuth0()
 
@@ -99,19 +99,19 @@ function Links() {
         /Jumbotron>
 
         <
-        button onClick = { dbquery } > MongoDB < img src = { mongo }
+        button onClick = { viewLinks } > MongoDB < img src = { mongo }
         width = "50"
         height = "50"
         alt = "mongodb" / > < /button>  <
-        button onClick = { dbquery } > Express < img src = { nExpress }
+        button onClick = { viewLinks } > Express < img src = { nExpress }
         width = "50"
         height = "50"
         alt = "express" / > < /button>  <
-        button onClick = { dbquery } > React < img src = { ract }
+        button onClick = { viewLinks } > React < img src = { ract }
         width = "50"
         height = "50"
         alt = "react" / > < /button>  <
-        button onClick = { dbquery } > Node < img src = { node }
+        button onClick = { viewLinks } > Node < img src = { node }
         width = "50"
         height = "50"
         alt = "node" / > < /button> 
