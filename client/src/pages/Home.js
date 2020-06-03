@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-//import books from "../Images/library.png";
-import vbooks from "../Images/library.mp4";
+import React, {useState, useEffect } from "react";
+import books from "../Images/library.png";
 import { useAuth0 } from "../react-auth0-spa";
-import { Player } from "video-react";
+// import Toast from "react-bootstrap/Toast;"
+
 
 const styles = {
   img: {
@@ -19,21 +19,21 @@ const styles = {
 };
 
 function Home() {
-  const { isAuthenticated, loginWithRedirect, logout } = useAuth0();
-  return (
-    <Player
-      playsInline
-      src={vbooks}
-      autoPlay
-      fluid={false}
-      width={100}
-      height={50}
-      Controlbar Hide
+    const { isAuthenticated, loginWithRedirect, logout } = useAuth0();
+    return (
 
-      //poster="/assets/poster.png"
-    />
-    // <img src={books} alt="books" className="booksImg" style= {styles.img} />
-  );
-}
+        <img src={books} alt="books" className="booksImg" style= {styles.img} />
 
-export default Home;
+    );
+};
+
+// <Toast>
+//   <Toast.Header>
+//     <img src="holder.js/20x20?text=%20" className="rounded mr-2" alt="" />
+//     <strong className="mr-auto">Bootstrap</strong>
+//     <small>11 mins ago</small>
+//   </Toast.Header>
+//   <Toast.Body>Hello, world! This is a toast message.</Toast.Body>
+// </Toast>
+
+   export default Home;

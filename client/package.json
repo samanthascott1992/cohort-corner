@@ -9,8 +9,14 @@
     "react-dom": "^16.6.3",
     "react-router-dom": "^5.1.2",
     "react-scripts": "^2.1.1",
+<<<<<<< HEAD
     "redux": "^4.0.5",
     "video-react": "^0.14.1"
+=======
+    "react-native": "^0.62.2",
+    "react-native-elements": "^2.0.1",
+    "react-bootstrap": "^1.0.1"
+>>>>>>> master
   },
   "scripts": {
     "start": "react-scripts start",
