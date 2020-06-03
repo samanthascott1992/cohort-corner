@@ -1,29 +1,39 @@
-import React, {useState, useEffect } from "react";
-import books from "../Images/library.mp4";
+import React, { useState, useEffect } from "react";
+//import books from "../Images/library.png";
+import vbooks from "../Images/library.mp4";
 import { useAuth0 } from "../react-auth0-spa";
-
+import { Player } from "video-react";
 
 const styles = {
   img: {
     width: "100%",
     height: "80%",
-    zIndex: 1
+    zIndex: 1,
   },
-  button : {
+  button: {
     zIndex: -1,
     float: "center",
     position: "absolute",
-    margin: "40%"
-  }
-
+    margin: "40%",
+  },
 };
 
-
 function Home() {
-    const { isAuthenticated, loginWithRedirect, logout } = useAuth0();
-    return (
-<
-        // <img src={books} alt="books" className="booksImg" style= {styles.img} />
-        )};
-    
-   export default Home;
+  const { isAuthenticated, loginWithRedirect, logout } = useAuth0();
+  return (
+    <Player
+      playsInline
+      src={vbooks}
+      autoPlay
+      fluid={false}
+      width={100}
+      height={50}
+      Controlbar Hide
+
+      //poster="/assets/poster.png"
+    />
+    // <img src={books} alt="books" className="booksImg" style= {styles.img} />
+  );
+}
+
+export default Home;

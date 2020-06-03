@@ -10,6 +10,36 @@ import nExpress from "../Images/nexpress.jpg"
 import ract from "../Images/react.png"
 import node from "../Images/node.png"
 import Nav from "../components/Nav";
+//import Dropdown from "react-toolbox/lib/dropdown"
+
+// const mern = [
+//   {value: 'mongo', label: 'mongo' },
+//   {value: 'express', label: 'express'},
+//   {value: 'react', label: 'react'},
+//   {value: 'node', label: 'node'}
+// ];
+
+// class DropdownTest extends React.Component {
+//   state = { value: ''};
+
+//   handleChange = (value) => {
+//     this.setState({value: value});
+
+    
+//   }
+
+  
+
+
+  // render () {
+  //   return (
+  //     <Dropdown
+  //       auto
+  //       onChange={this.handleChange}
+  //       source={mern}
+  //       value={this.state.value}
+  //     />
+  //   )}}
 
 function Links() {
   // Setting our component's initial state
@@ -72,11 +102,19 @@ function Links() {
               <h1>Submit a New Link for Reference</h1>
             </Jumbotron>
             <form>
-              <Input 
-              onChange={handleInputChange}
-              name="category"
-              placeholder="Please Pick a Category to Submit to!"
-              />
+              
+              {/* <Dropdown
+              auto
+              onChange={this.handleChange}
+              source={mern}
+              value={this.state.value}
+              /> */}
+              {/* <DropdownTest/> */}
+              
+              {/* onChange={handleInputChange} */}
+              {/* name="category" */}
+              {/* placeholder="Please Pick a Category to Submit to!" */}
+              
               <Input
                 onChange={handleInputChange}
                 name="subject"

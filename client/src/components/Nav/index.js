@@ -6,8 +6,8 @@ function Nav() {
     <nav className="navbar navbar-expand-lg bg-primary" style={{ background: `url(${rowofBooks})`}}>
       <a className="navbar-brand" href="/">
         
-        Dereferencing Pointers
-        
+        <h3 style={{color: 'black' }} >Dereferencing Pointers
+        </h3>
       </a>
     </nav>
   );
