@@ -10,6 +10,36 @@ import nExpress from "../Images/nexpress.jpg"
 import ract from "../Images/react.png"
 import node from "../Images/node.png"
 import Nav from "../components/Nav";
+//import Dropdown from "react-toolbox/lib/dropdown"
+
+// const mern = [
+//   {value: 'mongo', label: 'mongo' },
+//   {value: 'express', label: 'express'},
+//   {value: 'react', label: 'react'},
+//   {value: 'node', label: 'node'}
+// ];
+
+// class DropdownTest extends React.Component {
+//   state = { value: ''};
+
+//   handleChange = (value) => {
+//     this.setState({value: value});
+
+    
+//   }
+
+  
+
+
+  // render () {
+  //   return (
+  //     <Dropdown
+  //       auto
+  //       onChange={this.handleChange}
+  //       source={mern}
+  //       value={this.state.value}
+  //     />
+  //   )}}
 
 
 function Links() {
@@ -63,6 +93,87 @@ function Links() {
 
     return (
     
+<<<<<<< HEAD
+     <Container fluid>
+       <Nav/>
+        <Row>
+          <Col size="md-6">
+            <Jumbotron><h2>Subjects to Choose From</h2>
+            
+            </Jumbotron>
+           
+             <h4>MongoDB <img src={mongo}width="50" height="50" alt="mongodb"/></h4>
+              <h4>Express   <img src={nExpress}width="50" height="50" alt="express"/></h4>
+              <h4>React <img src={ract}width="50" height="50" alt="react"/></h4>
+              <h4>Node <img src={node}width="50" height="50" alt="node"/></h4>
+           
+            <Jumbotron>
+              <h1>Submit a New Link for Reference</h1>
+            </Jumbotron>
+            <form>
+              
+              {/* <Dropdown
+              auto
+              onChange={this.handleChange}
+              source={mern}
+              value={this.state.value}
+              /> */}
+              {/* <DropdownTest/> */}
+              
+              {/* onChange={handleInputChange} */}
+              {/* name="category" */}
+              {/* placeholder="Please Pick a Category to Submit to!" */}
+              
+              <Input
+                onChange={handleInputChange}
+                name="subject"
+                placeholder="Subject (required)"
+              /> 
+               <Input
+                onChange={handleInputChange}
+                name="url"
+                placeholder="Url (required)"
+              />
+              <TextArea
+                onChange={handleInputChange}
+                name="synopsis"
+                placeholder="Synopsis (Optional)"
+              />
+              <FormBtn
+                disabled={!(formObject.category && formObject.subject && formObject.url)}
+                onClick= {handleFormSubmit}
+              >
+                Submit New Reference Link
+              </FormBtn>
+            </form>
+           
+          </Col>
+          <Col size="md-6 sm-12">
+            <Jumbotron>
+              <h1>Reference Links</h1>
+            </Jumbotron>
+            {links.length ? (
+              <List>
+                {links.map(link => (
+                  <ListItem key={link._id}>
+                    <Link to={"/links/" + link._id}>
+                      <strong>
+                        {link.category}
+                        {link.subject} by {link.url}
+                      </strong>
+                    </Link>
+                    </ListItem>
+                ))}
+              </List>
+            ) : (
+              <h3>No Results to Display</h3>
+            )}
+          </Col>
+        </Row>
+      </Container>
+  );
+  };
+=======
       <Container fluid>
         <Nav/>
          <Row>
@@ -71,6 +182,7 @@ function Links() {
                <h2>Subjects to Choose From</h2>
              
              </Jumbotron>
+>>>>>>> master
 
               <button onClick={dbquery}> MongoDB <img src={mongo}width="50" height="50" alt="mongodb"/></button> 
               <button onClick={dbquery}>Express   <img src={nExpress}width="50" height="50" alt="express"/></button> 

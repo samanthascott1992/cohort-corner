@@ -8,17 +8,15 @@ const styles = {
   img: {
     width: "100%",
     height: "80%",
-    zIndex: 1
+    zIndex: 1,
   },
-  button : {
+  button: {
     zIndex: -1,
     float: "center",
     position: "absolute",
-    margin: "40%"
-  }
-
+    margin: "40%",
+  },
 };
-
 
 function Home() {
     const { isAuthenticated, loginWithRedirect, logout } = useAuth0();
