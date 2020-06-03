@@ -17,12 +17,12 @@ function Links() {
     const [links, setLinks] = useState([])
     const [formObject, setFormObject] = useState({})
 
-    // Load all books and store them with setBooks
+    // Load all links and store them with setLinks
     useEffect(() => {
         loadLinks()
     }, [])
 
-    // Loads all books and sets them to books
+    // Loads all links and sets them to links
     function loadLinks() {
         API.getLinks()
             .then(res =>
@@ -54,11 +54,11 @@ function Links() {
         loadLinks();
     };
 
-function dbquery () {
+// function dbquery () {
+//   db.cohortCorner.find( { category : "MongoDB" } )
 
-
-  console.log("button was clicked")
-}
+//   console.log("button was clicked")
+// }
 
 
     return (
@@ -72,12 +72,11 @@ function dbquery () {
              
              </Jumbotron>
 
-
-
               <button onClick={dbquery}> MongoDB <img src={mongo}width="50" height="50" alt="mongodb"/></button> 
               <button onClick={dbquery}>Express   <img src={nExpress}width="50" height="50" alt="express"/></button> 
               <button onClick={dbquery}>  React <img src={ract}width="50" height="50" alt="react"/></button> 
               <button onClick={dbquery}> Node <img src={node}width="50" height="50" alt="node"/></button> 
+
             <Jumbotron>
                <h1>Submit a New Link for Reference</h1>
              </Jumbotron>
