@@ -1,37 +1,32 @@
 {
-  "name": "mern",
-  "version": "0.1.0",
-  "private": true,
-  "proxy": "http://localhost:3001/",
-  "dependencies": {
-    "axios": "^0.18.0",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "^2.1.1",
-<<<<<<< HEAD
-    "redux": "^4.0.5",
-    "video-react": "^0.14.1"
-=======
-    "react-native": "^0.62.2",
-    "react-native-elements": "^2.0.1",
-    "react-bootstrap": "^1.0.1"
->>>>>>> master
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
-  "devDependencies": {
-    "react-toolbox": "^2.0.0-beta.6",
-    "react-toolbox-themr": "^1.0.2"
-  }
+    "name": "mern",
+    "version": "0.1.0",
+    "private": true,
+    "proxy": "http://localhost:3001/",
+    "dependencies": {
+        "axios": "^0.18.0",
+        "react": "^16.6.3",
+        "react-dom": "^16.6.3",
+        "react-router-dom": "^5.1.2",
+        "react-scripts": "^2.1.1",
+        "react-native": "^0.62.2",
+        "react-native-elements": "^2.0.1",
+        "react-bootstrap": "^1.0.1"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test --env=jsdom",
+        "eject": "react-scripts eject"
+    },
+    "browserslist": [
+        ">0.2%",
+        "not dead",
+        "not ie <= 11",
+        "not op_mini all"
+    ],
+    "devDependencies": {
+        "react-toolbox": "^2.0.0-beta.6",
+        "react-toolbox-themr": "^1.0.2"
+    }
 }
