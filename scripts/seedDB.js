@@ -120,6 +120,13 @@ const linkSeed = [{
         synopsis: "Tutorials on implementation and tools needed to deploy a Node.js application to Heroku.",
         date: new Date(Date.now())
     },
+    {
+        category: "HTML5",
+        subject: "HTML Reference",
+        url: "https://www.w3schools.com/tags/",
+        synopsis: "HTML tags referenced in alphabetical order.",
+        date: new Date(Date.now())
+    },
 ];
 
 db.Link

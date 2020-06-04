@@ -12,7 +12,7 @@ import node from "../Images/node.png";
 import Nav from "../components/Nav";
 import axios from "axios";
 import { useAuth0 } from "../react-auth0-spa";
-
+import html5 from "../Images/html5.png"
 
 
 function Links() {
@@ -109,6 +109,11 @@ function Links() {
             {" "}
             Node <img src={node} width="50" height="50" alt="node" data-category="Node.js" />{" "}
           </button>
+          <br />
+          <button onClick={viewLinks} data-category="HTML5">
+            {" "}
+            HTML5 <img src={html5} width="50" height="50" alt="html5" data-category="HTML5" />{" "}
+          </button>
           <Jumbotron>
             <h1> Submit a New Link for Reference </h1>{" "}
           </Jumbotron>{" "}
@@ -124,6 +129,7 @@ function Links() {
     <option value="Express" />
     <option value="ReactJS" />
     <option value="Node.js" />
+    <option value="HTML5" />
     
     </datalist>
             <Input
