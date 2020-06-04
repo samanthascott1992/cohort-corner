@@ -13,11 +13,14 @@ import Nav from "../components/Nav";
 import axios from "axios";
 import { useAuth0 } from "../react-auth0-spa";
 
+
+
 function Links() {
   // Setting our component's initial state
   const [links, setLinks] = useState([]);
   const [formObject, setFormObject] = useState({});
-
+  const { user, isAuthenticated } = useAuth0();
+  const [array, setArray] = useState([]);
   // Load all links and store them with setLinks
   useEffect(() => {
     loadLinks();
@@ -53,19 +56,22 @@ function Links() {
     loadLinks();
   }
 
-  const viewLinks = ({ id }) => {
-    const { user } = useAuth0();
-
-    const [array, setArray] = useState([]);
+  const viewLinks = (e) => {
+    const category = e.target.getAttribute("data-category") 
+    API.getLinksbyCategory(category).then(res=>
+      {setLinks(res.data)}
+    
+    )
+  };
 
     const getLinks = () => {
-      if (user) {
+      if (isAuthenticated) {
         axios.get("api/links/category/mongodb").then((res) => {
           setArray(res.data);
         });
       }
     };
-  };
+  
 
   return (
     <Container fluid>
@@ -75,41 +81,51 @@ function Links() {
           <Jumbotron>
             <h2> Subjects to Choose From </h2>
           </Jumbotron>
-          <button onClick={viewLinks}>
+          <button onClick={viewLinks} data-category="MongoDB">
             {" "}
             MongoDB <img
               src={mongo}
               width="50"
               height="50"
               alt="mongodb"
+              data-category="MongoDB"
             />{" "}
           </button>{" "}
-          <button onClick={viewLinks}>
+          <button onClick={viewLinks} data-category="Express">
             {" "}
             Express <img
               src={nExpress}
               width="50"
               height="50"
               alt="express"
+              data-category="Express"
             />{" "}
           </button>{" "}
-          <button onClick={viewLinks}>
+          <button onClick={viewLinks} data-category="ReactJS">
             {" "}
-            React <img src={ract} width="50" height="50" alt="react" />{" "}
+            React <img src={ract} width="50" height="50" alt="react" data-category="ReactJS"/>{" "}
           </button>{" "}
-          <button onClick={viewLinks}>
+          <button onClick={viewLinks} data-category="Node.js">
             {" "}
-            Node <img src={node} width="50" height="50" alt="node" />{" "}
+            Node <img src={node} width="50" height="50" alt="node" data-category="Node.js" />{" "}
           </button>
           <Jumbotron>
             <h1> Submit a New Link for Reference </h1>{" "}
           </Jumbotron>{" "}
           <form>
             <Input
+            list="category"
               onChange={handleInputChange}
               name="category"
               placeholder="Please Pick a Category to Submit to!"
             />
+            <datalist id="category">
+    <option value="MongoDB" />
+    <option value="Express" />
+    <option value="ReactJS" />
+    <option value="Node.js" />
+    
+    </datalist>
             <Input
               onChange={handleInputChange}
               name="subject"

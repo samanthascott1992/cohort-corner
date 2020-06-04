@@ -29,10 +29,10 @@ module.exports = {
     },
     category: function(req, res) {
         db.Link
-            .find({ category: req.params.category }
+            .find({ category: req.params.category })
                 .then(dbModel => res.json(dbModel))
                 .catch(err => res.status(422).json(err))
 
-            )
+            
     },
 };

@@ -3,6 +3,6 @@ const linkRoutes = require("./links");
 
 
 // link routes
-router.use("/", linkRoutes);
+router.use("/links", linkRoutes);
 
 module.exports = router;

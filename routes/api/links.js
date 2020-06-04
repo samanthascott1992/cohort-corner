@@ -1,19 +1,18 @@
 const router = require("express").Router();
 const linksController = require("../../controllers/linksController");
 
+
 // Matches with "/api/links"
-router.route("/");
-// Matches with "/api/links"
-router.route("/links")
+router.route("/")
     .get(linksController.findAll)
     .post(linksController.create);
 
 // Matches with "/api/links/:id"
-router.route("/links/:id")
+router.route("/:id")
     .get(linksController.findById)
     .put(linksController.update)
 
-router.route("/links/category/:category")
+router.route("/category/:category")
     .get(linksController.category)
 
 
