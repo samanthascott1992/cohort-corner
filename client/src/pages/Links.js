@@ -117,7 +117,7 @@ function Links() {
           </button>
           <button onClick={viewLinks} data-category="Javascript">
             {" "}
-            Javascript <img src={js} width="50" height="50" alt="html5" data-category="Javascript" />{" "}
+            Javascript <img src={js} width="50" height="50" alt="js" data-category="Javascript" />{" "}
           </button>
           <Jumbotron>
             <h1> Submit a New Link for Reference </h1>{" "}
