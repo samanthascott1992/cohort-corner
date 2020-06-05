@@ -27,8 +27,8 @@ function Home() {
       src={vbooks}
       autoplay
       fluid={false}
-      width={80%}
-      height={50%}
+      width={480}
+      height={272}
     />
 
 
