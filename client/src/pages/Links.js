@@ -14,7 +14,10 @@ import axios from "axios";
 import { useAuth0 } from "../react-auth0-spa";
 import html5 from "../Images/html5.png";
 import js from "../Images/js.png";
-import jquery from "../Images/jquery.png"
+import jquery from "../Images/jquery.png";
+import github from "../Images/github.png";
+import css from "../Images/css.png";
+import heroku from "../Images/heroku.png";
 
 function Links() {
   // Setting our component's initial state
@@ -82,10 +85,17 @@ function Links() {
           <Jumbotron>
             <h2> Subjects to Choose From </h2>
           </Jumbotron>
-       
+          <button onClick={viewLinks} data-category="GitHub">
+            {" "}
+            GitHub <img src={github} width="50" height="50" alt="gitghub" data-category="GitHub" />{" "}
+          </button>      
           <button onClick={viewLinks} data-category="HTML5">
             {" "}
             HTML5 <img src={html5} width="50" height="50" alt="html5" data-category="HTML5" />{" "}
+          </button>
+          <button onClick={viewLinks} data-category="CSS">
+            {" "}
+            CSS <img src={css} width="50" height="50" alt="css" data-category="CSS" />{" "}
           </button>
           <button onClick={viewLinks} data-category="Javascript">
             {" "}
@@ -93,7 +103,7 @@ function Links() {
           </button>
           <button onClick={viewLinks} data-category="JQuery">
             {" "}
-            JQuery <img src={jquery} width="50" height="50" alt="js" data-category="JQuery" />{" "}
+            JQuery <img src={jquery} width="50" height="50" alt="jquery" data-category="JQuery" />{" "}
           </button>   <br />        
           <button onClick={viewLinks} data-category="MongoDB">
             {" "}
@@ -123,6 +133,10 @@ function Links() {
             {" "}
             Node <img src={node} width="50" height="50" alt="node" data-category="Node.js" />{" "}
           </button>
+          <button onClick={viewLinks} data-category="Heroku">
+            {" "}
+            Heroku <img src={heroku} width="50" height="50" alt="Heroku" data-category="Heroku" />{" "}
+          </button>
           <Jumbotron>
             <h1> Submit a New Link for Reference </h1>{" "}
           </Jumbotron>{" "}
@@ -134,13 +148,16 @@ function Links() {
               placeholder="Please Pick a Category to Submit to!"
             />
             <datalist id="category">
+              <option value="GitHub" />
               <option value="HTML5" />
               <option value="Javascript" />
+              <option value="CSS" />
               <option value="JQuery" />
               <option value="MongoDB" />
               <option value="Express" />
               <option value="ReactJS" />
               <option value="Node.js" />
+              <option value="Heroku" />
             </datalist>
             <Input
               onChange={handleInputChange}
