@@ -82,7 +82,7 @@ function Links() {
           <Jumbotron>
             <h2> Subjects to Choose From </h2>
           </Jumbotron>
-          <br />
+       
           <button onClick={viewLinks} data-category="HTML5">
             {" "}
             HTML5 <img src={html5} width="50" height="50" alt="html5" data-category="HTML5" />{" "}
@@ -94,7 +94,7 @@ function Links() {
           <button onClick={viewLinks} data-category="JQuery">
             {" "}
             JQuery <img src={jquery} width="50" height="50" alt="js" data-category="JQuery" />{" "}
-          </button>        
+          </button>   <br />        
           <button onClick={viewLinks} data-category="MongoDB">
             {" "}
             MongoDB <img
