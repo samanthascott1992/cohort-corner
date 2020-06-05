@@ -82,6 +82,19 @@ function Links() {
           <Jumbotron>
             <h2> Subjects to Choose From </h2>
           </Jumbotron>
+          <br />
+          <button onClick={viewLinks} data-category="HTML5">
+            {" "}
+            HTML5 <img src={html5} width="50" height="50" alt="html5" data-category="HTML5" />{" "}
+          </button>
+          <button onClick={viewLinks} data-category="Javascript">
+            {" "}
+            Javascript <img src={js} width="50" height="50" alt="js" data-category="Javascript" />{" "}
+          </button>
+          <button onClick={viewLinks} data-category="JQuery">
+            {" "}
+            JQuery <img src={jquery} width="50" height="50" alt="js" data-category="JQuery" />{" "}
+          </button>        
           <button onClick={viewLinks} data-category="MongoDB">
             {" "}
             MongoDB <img
@@ -110,19 +123,6 @@ function Links() {
             {" "}
             Node <img src={node} width="50" height="50" alt="node" data-category="Node.js" />{" "}
           </button>
-          <br />
-          <button onClick={viewLinks} data-category="HTML5">
-            {" "}
-            HTML5 <img src={html5} width="50" height="50" alt="html5" data-category="HTML5" />{" "}
-          </button>
-          <button onClick={viewLinks} data-category="Javascript">
-            {" "}
-            Javascript <img src={js} width="50" height="50" alt="js" data-category="Javascript" />{" "}
-          </button>
-          <button onClick={viewLinks} data-category="JQuery">
-            {" "}
-            JQuery <img src={jquery} width="50" height="50" alt="js" data-category="JQuery" />{" "}
-          </button>
           <Jumbotron>
             <h1> Submit a New Link for Reference </h1>{" "}
           </Jumbotron>{" "}
@@ -134,15 +134,14 @@ function Links() {
               placeholder="Please Pick a Category to Submit to!"
             />
             <datalist id="category">
-    <option value="MongoDB" />
-    <option value="Express" />
-    <option value="ReactJS" />
-    <option value="Node.js" />
-    <option value="HTML5" />
-    <option value="Javascript" />
-    <option value="JQuery" />
-    
-    </datalist>
+              <option value="HTML5" />
+              <option value="Javascript" />
+              <option value="JQuery" />
+              <option value="MongoDB" />
+              <option value="Express" />
+              <option value="ReactJS" />
+              <option value="Node.js" />
+            </datalist>
             <Input
               onChange={handleInputChange}
               name="subject"

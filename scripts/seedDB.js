@@ -8,7 +8,78 @@ mongoose.connect(
     "mongodb://localhost/cohortCorner"
 );
 
-const linkSeed = [{
+const linkSeed = [
+    {
+        category: "HTML5",
+        subject: "HTML Reference",
+        url: "https://www.w3schools.com/tags/",
+        synopsis: "HTML tags referenced in alphabetical order.",
+        date: new Date(Date.now())
+    },
+    {
+        category: "HTML5",
+        subject: "HTML DOCTYPE Declaration",
+        url: "https://www.w3schools.com/tags/tag_doctype.asp",
+        synopsis: "This link shows you how an HTML5 document is started.",
+        date: new Date(Date.now())
+    },
+        {
+        category: "HTML5",
+        subject: "YouTube My First HTML File",
+        url: "https://www.youtube.com/watch?v=ieb6Svbc10E",
+        synopsis: "A video to walk through how to set up an HTML file.",
+        date: new Date(Date.now())
+    },
+    {
+        category: "HTML5",
+        subject: "MDN HTML5 Developer Guide",
+        url: "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5",
+        synopsis: "Offers additional resources and knowledge about HTML5. ",
+        date: new Date(Date.now())
+    },
+    {
+        category: "Javascript",
+        subject: "Loops and Iteration",
+        url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration",
+        synopsis: "Gives examples of different types of loops able to be written in Javascript. ",
+        date: new Date(Date.now())
+    },
+    {
+        category: "Javascript",
+        subject: "Callback Functions and How to Use Them",
+        url: "http://javascriptissexy.com/understand-javascript-callback-functions-and-use-them/",
+        synopsis: "Walks through what callbacks are. Gives basics of how to implement them and what they look like. ",
+        date: new Date(Date.now())
+    },
+    {
+        category: "Javascript",
+        subject: "Javascript Beginner Async",
+        url: "http://javascriptissexy.com/understand-javascript-callback-functions-and-use-them/",
+        synopsis: "Explains what Async is and how to program asynchronously.",
+        date: new Date(Date.now())
+    },
+    {
+        category: "JQuery",
+        subject: "JQuery API Documentation",
+        url: "https://api.jquery.com/",
+        synopsis: "A list of API documentation manipulators and descriptions of what they do.",
+        date: new Date(Date.now())
+    },
+    {
+        category: "JQuery",
+        subject: "JQuery CDN",
+        url: "https://api.jquery.com/",
+        synopsis: "List of Jquery links to be able to add to implement within your application.",
+        date: new Date(Date.now())
+    },
+    {
+        category: "JQuery",
+        subject: "YouTube Sandwich Click tutorial",
+        url: "https://www.youtube.com/watch?v=6BLReDBUZRk",
+        synopsis: "Video tutorial of how to make sandwich click app from lesson 4.1",
+        date: new Date(Date.now())
+    },
+    {
         category: "MongoDB",
         subject: "MongoDB Installation Instructions",
         url: "https://github.com/scwebd/mongo-install-instructions",
@@ -118,76 +189,6 @@ const linkSeed = [{
         subject: "How to Deploy a Node.js App to Heroku",
         url: "https://scotch.io/tutorials/how-to-deploy-a-node-js-app-to-heroku",
         synopsis: "Tutorials on implementation and tools needed to deploy a Node.js application to Heroku.",
-        date: new Date(Date.now())
-    },
-    {
-        category: "HTML5",
-        subject: "HTML Reference",
-        url: "https://www.w3schools.com/tags/",
-        synopsis: "HTML tags referenced in alphabetical order.",
-        date: new Date(Date.now())
-    },
-    {
-        category: "HTML5",
-        subject: "HTML DOCTYPE Declaration",
-        url: "https://www.w3schools.com/tags/tag_doctype.asp",
-        synopsis: "This link shows you how an HTML5 document is started.",
-        date: new Date(Date.now())
-    },
-        {
-        category: "HTML5",
-        subject: "YouTube My First HTML File",
-        url: "https://www.youtube.com/watch?v=ieb6Svbc10E",
-        synopsis: "A video to walk through how to set up an HTML file.",
-        date: new Date(Date.now())
-    },
-    {
-        category: "HTML5",
-        subject: "MDN HTML5 Developer Guide",
-        url: "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5",
-        synopsis: "Offers additional resources and knowledge about HTML5. ",
-        date: new Date(Date.now())
-    },
-    {
-        category: "Javascript",
-        subject: "Loops and Iteration",
-        url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration",
-        synopsis: "Gives examples of different types of loops able to be written in Javascript. ",
-        date: new Date(Date.now())
-    },
-    {
-        category: "Javascript",
-        subject: "Callback Functions and How to Use Them",
-        url: "http://javascriptissexy.com/understand-javascript-callback-functions-and-use-them/",
-        synopsis: "Walks through what callbacks are. Gives basics of how to implement them and what they look like. ",
-        date: new Date(Date.now())
-    },
-    {
-        category: "Javascript",
-        subject: "Javascript Beginner Async",
-        url: "http://javascriptissexy.com/understand-javascript-callback-functions-and-use-them/",
-        synopsis: "Explains what Async is and how to program asynchronously.",
-        date: new Date(Date.now())
-    },
-    {
-        category: "JQuery",
-        subject: "JQuery API Documentation",
-        url: "https://api.jquery.com/",
-        synopsis: "A list of API documentation manipulators and descriptions of what they do.",
-        date: new Date(Date.now())
-    },
-    {
-        category: "JQuery",
-        subject: "JQuery CDN",
-        url: "https://api.jquery.com/",
-        synopsis: "List of Jquery links to be able to add to implement within your application.",
-        date: new Date(Date.now())
-    },
-    {
-        category: "JQuery",
-        subject: "YouTube Sandwich Click tutorial",
-        url: "https://www.youtube.com/watch?v=6BLReDBUZRk",
-        synopsis: "Video tutorial of how to make sandwich click app from lesson 4.1",
         date: new Date(Date.now())
     },
 ];
