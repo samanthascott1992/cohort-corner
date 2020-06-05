@@ -14,7 +14,7 @@ import axios from "axios";
 import { useAuth0 } from "../react-auth0-spa";
 import html5 from "../Images/html5.png";
 import js from "../Images/js.png";
-
+import jquery from "../Images/jquery.png"
 
 function Links() {
   // Setting our component's initial state
@@ -119,6 +119,10 @@ function Links() {
             {" "}
             Javascript <img src={js} width="50" height="50" alt="js" data-category="Javascript" />{" "}
           </button>
+          <button onClick={viewLinks} data-category="JQuery">
+            {" "}
+            JQuery <img src={jquery} width="50" height="50" alt="js" data-category="JQuery" />{" "}
+          </button>
           <Jumbotron>
             <h1> Submit a New Link for Reference </h1>{" "}
           </Jumbotron>{" "}
@@ -136,6 +140,7 @@ function Links() {
     <option value="Node.js" />
     <option value="HTML5" />
     <option value="Javascript" />
+    <option value="JQuery" />
     
     </datalist>
             <Input

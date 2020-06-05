@@ -169,6 +169,27 @@ const linkSeed = [{
         synopsis: "Explains what Async is and how to program asynchronously.",
         date: new Date(Date.now())
     },
+    {
+        category: "JQuery",
+        subject: "JQuery API Documentation",
+        url: "https://api.jquery.com/",
+        synopsis: "A list of API documentation manipulators and descriptions of what they do.",
+        date: new Date(Date.now())
+    },
+    {
+        category: "JQuery",
+        subject: "JQuery CDN",
+        url: "https://api.jquery.com/",
+        synopsis: "List of Jquery links to be able to add to implement within your application.",
+        date: new Date(Date.now())
+    },
+    {
+        category: "JQuery",
+        subject: "YouTube Sandwich Click tutorial",
+        url: "https://www.youtube.com/watch?v=6BLReDBUZRk",
+        synopsis: "Video tutorial of how to make sandwich click app from lesson 4.1",
+        date: new Date(Date.now())
+    },
 ];
 
 db.Link
