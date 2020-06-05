@@ -36,7 +36,7 @@ function Detail(props) {
           <Col size="md-10 md-offset-1">
             <article>
               <h2>Reference Link:</h2>
-              <a href={link.url}>{link.url}</a> 
+              <a href={link.url} target="_blank" >{link.url}</a> 
               <h2>Synopsis</h2>
               <p>
                 {link.synopsis}
