@@ -85,27 +85,27 @@ function Links() {
           <Jumbotron>
             <h2> Subjects to Choose From </h2>
           </Jumbotron>
-          <button onClick={viewLinks} data-category="GitHub">
+          <button width="100" height="100" onClick={viewLinks} data-category="GitHub">
             {" "}
             GitHub <img src={github} width="50" height="50" alt="gitghub" data-category="GitHub" />{" "}
           </button>      
-          <button onClick={viewLinks} data-category="HTML5">
+          <button width="100" height="100" onClick={viewLinks} data-category="HTML5">
             {" "}
             HTML5 <img src={html5} width="50" height="50" alt="html5" data-category="HTML5" />{" "}
           </button>
-          <button onClick={viewLinks} data-category="CSS">
+          <button width="100" height="100" onClick={viewLinks} data-category="CSS">
             {" "}
             CSS <img src={css} width="50" height="50" alt="css" data-category="CSS" />{" "}
           </button>
-          <button onClick={viewLinks} data-category="Javascript">
+          <button width="100" height="100" onClick={viewLinks} data-category="Javascript">
             {" "}
             Javascript <img src={js} width="50" height="50" alt="js" data-category="Javascript" />{" "}
           </button>
-          <button onClick={viewLinks} data-category="JQuery">
+          <button width="100" height="100" onClick={viewLinks} data-category="JQuery">
             {" "}
             JQuery <img src={jquery} width="50" height="50" alt="jquery" data-category="JQuery" />{" "}
           </button>   <br />        
-          <button onClick={viewLinks} data-category="MongoDB">
+          <button width="100" height="100" onClick={viewLinks} data-category="MongoDB">
             {" "}
             MongoDB <img
               src={mongo}
@@ -115,7 +115,7 @@ function Links() {
               data-category="MongoDB"
             />{" "}
           </button>{" "}
-          <button onClick={viewLinks} data-category="Express">
+          <button width="100" height="100" onClick={viewLinks} data-category="Express">
             {" "}
             Express <img
               src={nExpress}
@@ -125,15 +125,15 @@ function Links() {
               data-category="Express"
             />{" "}
           </button>{" "}
-          <button onClick={viewLinks} data-category="ReactJS">
+          <button width="100" height="100" onClick={viewLinks} data-category="ReactJS">
             {" "}
             React <img src={ract} width="50" height="50" alt="react" data-category="ReactJS"/>{" "}
           </button>{" "}
-          <button onClick={viewLinks} data-category="Node.js">
+          <button width="100" height="100" onClick={viewLinks} data-category="Node.js">
             {" "}
             Node <img src={node} width="50" height="50" alt="node" data-category="Node.js" />{" "}
           </button>
-          <button onClick={viewLinks} data-category="Heroku">
+          <button width="100" height="100" onClick={viewLinks} data-category="Heroku">
             {" "}
             Heroku <img src={heroku} width="50" height="50" alt="Heroku" data-category="Heroku" />{" "}
           </button>
