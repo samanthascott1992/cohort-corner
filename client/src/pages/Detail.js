@@ -35,8 +35,8 @@ function Detail(props) {
         <Row>
           <Col size="md-10 md-offset-1">
             <article>
-              <h2>Link to go to</h2>
-              <p> {link.url} </p>
+              <h2>Reference Link:</h2>
+              <a href={link.url}>{link.url}</a> 
               <h2>Synopsis</h2>
               <p>
                 {link.synopsis}
