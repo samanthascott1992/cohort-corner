@@ -1,7 +1,8 @@
 import React, {useState, useEffect } from "react";
-import vbooks from "../Images/library.mp4";
+// import vbooks from "../Images/library.mp4";
+// import { Player } from "video-react"
+import Library from "../Images/library.png";
 import { useAuth0 } from "../react-auth0-spa";
-import { Player } from "video-react"
 
 
 const styles = {
@@ -21,15 +22,8 @@ const styles = {
 function Home() {
     const { isAuthenticated, loginWithRedirect, logout } = useAuth0();
     return (
+      <img src={Library} alt="library" />
 
-      <Player
-      playsInline
-      src={vbooks}
-      autoplay
-      fluid={false}
-      width={80}
-      height={50}
-    />
 
 
     );
