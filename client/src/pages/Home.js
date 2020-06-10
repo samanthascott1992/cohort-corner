@@ -6,19 +6,14 @@ import { useAuth0 } from "../react-auth0-spa";
 
 
 const styles = {
-
-  button: {
-    zIndex: -1,
-    float: "center",
-    position: "absolute",
-    margin: "40%",
-  },
+  width="100%",
+  height="98%"
 };
 
 function Home() {
     const { isAuthenticated, loginWithRedirect, logout } = useAuth0();
     return (
-      <img src={cohortCorner} alt="library" />
+      <img src={cohortCorner} style={styles} alt="library" />
 
 
 
