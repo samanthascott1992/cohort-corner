@@ -1,7 +1,7 @@
 import React, {useState, useEffect } from "react";
 // import vbooks from "../Images/library.mp4";
 // import { Player } from "video-react"
-import cohortCorner from "../Images/cohortcorner3.png";
+import cohortCorner from "../Images/cohortcorner.png";
 import { useAuth0 } from "../react-auth0-spa";
 
 
