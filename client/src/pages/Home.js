@@ -6,8 +6,8 @@ import { useAuth0 } from "../react-auth0-spa";
 
 
 const styles = {
-  width="100%",
-  height="98%"
+  width="100",
+  height="98"
 };
 
 function Home() {
